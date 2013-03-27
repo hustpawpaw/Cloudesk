@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:orientation="vertical" android:background="@drawable/defaultbackgroud">
+  
+  <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="600dip">
+   <TableLayout android:id="@+id/tableLayout3" android:layout_width="match_parent" android:layout_height="600dip" android:shrinkColumns="1,2,3,4,5" android:stretchColumns="0,1,2,3,4,5" android:isScrollContainer="true" android:scrollbars="vertical" >
+        <TableRow android:id="@+id/tableRow1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dip">
+            <TextView android:textSize="20dip" android:layout_width="fill_parent" android:id="@+id/textView1" android:layout_height="wrap_content" android:text="@string/measurement" android:layout_gravity="center" android:textColor="#000000"></TextView>
+            <TextView android:textSize="20dip" android:layout_width="fill_parent" android:id="@+id/textView6" android:layout_height="wrap_content" android:text="@string/working_condition_1" android:layout_gravity="center" android:gravity="center" android:textColor="#000000" ></TextView>
+            <TextView android:textSize="20dip" android:layout_width="240dip" android:id="@+id/textView5" android:layout_height="wrap_content" android:text="@string/working_condition_2" android:layout_gravity="center" android:gravity="center" android:textColor="#000000" ></TextView>
+            <TextView android:textSize="20dip" android:layout_width="fill_parent" android:id="@+id/textView3" android:layout_height="wrap_content" android:text="@string/research_foreground_1" android:layout_gravity="center" android:gravity="center"  android:textColor="#000000"></TextView>
+            <TextView android:textSize="20dip" android:layout_width="fill_parent" android:id="@+id/textView2" android:layout_height="wrap_content" android:text="@string/research_foreground_2" android:layout_gravity="center" android:gravity="center" android:textColor="#000000" ></TextView>
+            <TextView android:textSize="20dip" android:layout_width="fill_parent" android:id="@+id/textView4" android:layout_height="wrap_content" android:layout_gravity="center"  android:textColor="#000000" android:text="@string/research_foreground_3"></TextView>
+        </TableRow>
+          <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+              <TextView android:textSize="20dip" android:id="@+id/textView7" android:layout_height="wrap_content" android:text="@string/score1" android:layout_gravity="center" android:gravity="center" android:textColor="#000000" ></TextView>
+              <TextView android:textSize="20dip" android:layout_width="fill_parent" android:id="@+id/textView8"  android:layout_height="wrap_content" android:text="@string/score30" android:layout_gravity="center" android:gravity="center" android:textColor="#000000" ></TextView>
+              <TextView android:textSize="20dip" android:layout_width="fill_parent" android:id="@+id/textView9"   android:layout_height="wrap_content" android:text="@string/score10" android:layout_gravity="center" android:gravity="center" android:textColor="#000000" ></TextView>
+              <TextView android:textSize="20dip" android:layout_width="fill_parent" android:id="@+id/textView10"  android:layout_height="wrap_content" android:text="@string/score20" android:layout_gravity="center" android:gravity="center" android:textColor="#000000" ></TextView>
+              <TextView android:textSize="20dip" android:layout_width="fill_parent" android:id="@+id/textView11"  android:layout_height="wrap_content" android:text="@string/score20" android:layout_gravity="center" android:gravity="center" android:textColor="#000000" ></TextView>
+              <TextView android:textSize="20dip" android:layout_width="fill_parent" android:id="@+id/textView12" android:layout_height="wrap_content" android:text="@string/score20" android:layout_gravity="center" android:gravity="center" android:textColor="#000000" ></TextView>
+          </TableRow>
+          <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow3" android:layout_height="wrap_content">
+              <TextView android:textSize="20dip" android:id="@+id/textView13"  android:layout_height="wrap_content" android:text="@string/requirements" android:layout_gravity="center" android:gravity="center" android:textColor="#000000"></TextView>
+              <TextView android:textSize="20dip" android:layout_width="fill_parent" android:id="@+id/textView14"  android:layout_height="wrap_content" android:text="@string/requirement1" android:layout_gravity="center" android:gravity="center" android:textColor="#000000"></TextView>
+              <TextView android:textSize="20dip" android:layout_width="fill_parent" android:id="@+id/textView15" android:layout_height="wrap_content" android:text="@string/requirement2" android:layout_gravity="center" android:gravity="center" android:textColor="#000000"></TextView>
+              <TextView android:textSize="20dip" android:layout_width="fill_parent" android:id="@+id/textView16"  android:layout_height="wrap_content" android:text="@string/requirement3" android:layout_gravity="center" android:gravity="center" android:textColor="#000000"></TextView>
+              <TextView android:textSize="20dip" android:layout_width="fill_parent" android:id="@+id/textView17"  android:layout_height="wrap_content" android:text="@string/requirement4" android:layout_gravity="center" android:gravity="center" android:textColor="#000000"></TextView>
+              <TextView android:textSize="20dip" android:layout_width="fill_parent" android:id="@+id/textView18"  android:layout_height="wrap_content" android:text="@string/requirement5" android:layout_gravity="center" android:gravity="center" android:textColor="#000000"></TextView>
+          </TableRow>
+          <LinearLayout android:layout_gravity="center" android:id="@+id/LinearLoadingBar" android:paddingTop="20dip" android:layout_width="wrap_content" android:orientation="vertical" android:paddingBottom="10dip" android:gravity="center" android:layout_height="wrap_content">
+              <ProgressBar android:indeterminateOnly="true" style="\@style/qZoneListProgressStyle" android:layout_width="wrap_content" android:id="@+id/loadingPBar" android:layout_height="wrap_content"></ProgressBar>
+              <TextView android:textColor="#000000" android:layout_gravity="center" android:id="@+id/loadingText" android:layout_height="wrap_content" android:text="@string/loading_msg" android:gravity="center" android:textSize="10dip" android:layout_width="wrap_content"></TextView>
+          </LinearLayout>
+   </TableLayout>
+    </ScrollView>
+    	<LinearLayout 
+				android:layout_width="wrap_content" 
+				android:layout_height="10px"
+				android:orientation="horizontal"
+				android:layout_gravity="right"
+				>
+				
+			</LinearLayout>
+    	<LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+    		<TextView  android:textSize="20dip" android:id="@+id/textView19" android:layout_height="wrap_content" android:text="@string/Remarks" android:layout_width="wrap_content" android:layout_gravity="center" android:gravity="center" android:textColor="#000000"></TextView>
+    	</LinearLayout>
+    <LinearLayout
+		android:paddingTop="30px"
+		android:layout_width="fill_parent"
+		android:gravity="center"
+		android:layout_height="wrap_content">
+			<LinearLayout 
+				android:layout_width="wrap_content" 
+				android:layout_height="match_parent">
+				<Button 
+					android:gravity="center" 
+					android:textSize="23dip" 
+					android:layout_width="110px" 
+					android:layout_height="55px" android:id="@+id/submit1" android:text="@string/submit">
+				</Button>
+			</LinearLayout>
+			<LinearLayout 
+				android:layout_width="wrap_content" 
+				android:layout_height="match_parent"
+				android:paddingLeft="50px">
+				<Button 
+					android:gravity="center" 
+					android:textSize="23dip" 
+					android:layout_width="110px" 
+					android:layout_height="55px" android:text="@string/reset" android:id="@+id/reset1">
+				</Button>
+					<LinearLayout 
+				android:layout_width="wrap_content" 
+				android:layout_height="match_parent"
+				android:paddingLeft="50px">
+				  <Button 
+					android:gravity="center" 
+					android:textSize="20dip" 
+					android:layout_width="140px" 
+					android:layout_height="55px" android:text="@string/show_details" android:id="@+id/showdetails" android:visibility="gone">
+				</Button>
+				</LinearLayout>
+			</LinearLayout>
+			  
+		
+	</LinearLayout>
+    <TableLayout android:id="@+id/tableLayout1" android:layout_width="match_parent" android:layout_height="wrap_content"></TableLayout>
+</LinearLayout>
